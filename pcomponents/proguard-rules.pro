@@ -1,0 +1,5 @@
+-dontwarn android.databinding.**
+-keep class android.databinding.** { *; }
+-keep class ir.pkokabi.pdialogs.** {*;}
+-keep class com.wang.avi.** { *; }
+-keep class com.wang.avi.indicators.** { *; }

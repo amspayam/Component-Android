@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#2C3E50</color>
+    <color name="darkPrimaryColor">#1E2A36</color>
+    <color name="accentColor">#FC4349</color>
+
+    <!--base colors-->
+    <color name="transparent">#00000000</color>
+    <color name="whiteDialog">#FFF</color>
+    <color name="blackDialog">#444</color>
+    <color name="grayDialog">#717171</color>
+    <color name="yellowDialog">#EBB323</color>
+    <color name="redDialog">#F40F46</color>
+    <color name="greenDialog">#14BF93</color>
+    <color name="blueDialog">#0084FF</color>
+    <color name="disableColorDialog">#D8D8D8</color>
+    <color name="dividerDialog">#D8D8D8</color>
+    <color name="accentPressed">#c63439</color>
+</resources>

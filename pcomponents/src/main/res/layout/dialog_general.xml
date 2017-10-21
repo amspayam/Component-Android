@@ -1,0 +1,66 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:layoutDirection="rtl"
+        android:minWidth="240dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="@dimen/cardElevation"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="240dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/titleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="8dp"
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1"
+                android:paddingBottom="8dp"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/blackDialog"
+                android:textIsSelectable="true"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/secondBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleTv"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@+id/firstBtn"
+                android:background="@color/transparent"
+                android:textColor="@color/accentColor"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/firstBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/titleTv"
+                android:layout_marginTop="8dp"
+                android:background="@color/transparent"
+                android:textColor="@color/accentColor"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</layout>

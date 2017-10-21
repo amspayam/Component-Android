@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PDialog</string>
+
+    <string name="pleaseChooseDateTimeP">تاریخ و زمان را مشخص کنید</string>
+    <string name="pleaseChooseItemP">انتخاب کنید</string>
+    <string name="chooseP">تائید</string>
+    <string name="cancelP">بی خیال</string>
+
+    <string name="internetConnectionErrorP">عدم اتصال به اینترنت</string>
+    <string name="noInternetTitleP">اتصال شما به اینترنت برقرار نیست ،</string>
+    <string name="noInternetDescP">برای استفاده از نرم‌افزار به اینترنت متصل شوید</string>
+    <string name="gprsP">اینترنت موبایل</string>
+    <string name="wifiP">اینترنت WI-FI</string>
+
+    <string name="gpsConnectionP">عدم اتصال مکان یاب</string>
+    <string name="noGPSTitleP">برای استفاده از نقشه</string>
+    <string name="noGPSDescP">نیاز به فعال سازی مکان یاب است.</string>
+    <string name="activateGPSP">فعال سازی مکان یاب</string>
+
+</resources>
