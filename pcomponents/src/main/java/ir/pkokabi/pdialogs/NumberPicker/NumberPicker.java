@@ -134,6 +134,14 @@ public class NumberPicker extends RelativeLayout implements View.OnClickListener
         binding.numberTv.setText(String.valueOf(number));
     }
 
+    public void setMaxValue(int number) {
+        maxValue = number;
+    }
+
+    public void setMinValue(int number) {
+        minValue = number;
+    }
+
     public void increment() {
         if (number + 1 <= maxValue) {
             number++;
