@@ -9,13 +9,20 @@ import android.provider.Settings;
  * Created by p.kokabi on 10/30/2017.
  */
 
-public class DialogPermission {
+public class DialogPermission implements DialogPermissionCallBack {
+
+    private DialogGeneral generalDialog;
 
     public DialogPermission(final Context context) {
-        new DialogGeneral(context, "متاسفانه به دلیل عدم تایید دسترسی ، ما قادر به انجام درخواست شما نیستیم؛ در صورت تمایل دسترسی\u200C را دوباره تنظیم کنید"
+        generalDialog = new DialogGeneral(context, "متاسفانه به دلیل عدم تایید دسترسی ، ما قادر به انجام درخواست شما نیستیم؛ در صورت تمایل دسترسی\u200C را دوباره تنظیم کنید"
                 , "باشه", "تنظیمات") {
             @Override
-            public void onCancel() {
+            public void onFirstButton() {
+                onCancel();
+            }
+
+            @Override
+            public void onSecondButton() {
                 context.startActivity(new Intent().setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
                         .addCategory(Intent.CATEGORY_DEFAULT)
                         .setData(Uri.parse("package:" + context.getPackageName()))
@@ -24,5 +31,10 @@ public class DialogPermission {
                         .addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS));
             }
         };
+    }
+
+    @Override
+    public void onCancel() {
+        generalDialog.dismiss();
     }
 }

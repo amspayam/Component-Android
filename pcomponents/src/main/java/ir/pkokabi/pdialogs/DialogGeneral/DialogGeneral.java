@@ -73,21 +73,21 @@ public class DialogGeneral extends AppCompatDialog implements View.OnClickListen
     public void onClick(View view) {
         int i = view.getId();
         if (i == R.id.firstBtn) {
-            onConfirm();
+            onFirstButton();
             dismiss();
         } else if (i == R.id.secondBtn) {
-            onCancel();
+            onSecondButton();
             dismiss();
         }
     }
 
     @Override
-    public void onConfirm() {
+    public void onFirstButton() {
         dismiss();
     }
 
     @Override
-    public void onCancel() {
+    public void onSecondButton() {
         dismiss();
     }
 }

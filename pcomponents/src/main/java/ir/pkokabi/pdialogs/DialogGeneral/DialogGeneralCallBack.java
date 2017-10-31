@@ -6,8 +6,8 @@ package ir.pkokabi.pdialogs.DialogGeneral;
 
 public interface DialogGeneralCallBack {
 
-    void onConfirm();
+    void onFirstButton();
 
-    void onCancel();
+    void onSecondButton();
 
 }

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 import ir.pkokabi.pdialogs.DatePicker.DialogLinkedMap;
 import ir.pkokabi.pdialogs.DialogGeneral.DialogPermission;
@@ -30,7 +31,13 @@ public class MainActivity extends AppCompatActivity {
         brands.put("5", "e");
         brands.put("6", "f");
 
-        new DialogPermission(context);
+        new DialogPermission(context) {
+            @Override
+            public void onCancel() {
+                super.onCancel();
+                Toast.makeText(context, "aa", Toast.LENGTH_SHORT).show();
+            }
+        };
 
         binding.testCs.setOnClickListener(new View.OnClickListener() {
             @Override
