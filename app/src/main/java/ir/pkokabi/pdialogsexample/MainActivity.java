@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import ir.pkokabi.pdialogs.DatePicker.DialogLinkedMap;
-import ir.pkokabi.pdialogs.DialogGeneral.InternetWarning;
+import ir.pkokabi.pdialogs.DialogGeneral.DialogPermission;
 import ir.pkokabi.pdialogsexample.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
         brands.put("5", "e");
         brands.put("6", "f");
 
-        new InternetWarning(context);
-
+        new DialogPermission(context);
 
         binding.testCs.setOnClickListener(new View.OnClickListener() {
             @Override
